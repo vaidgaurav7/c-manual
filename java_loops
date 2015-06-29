@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+               int i,i1,j=0,k=0,s=0,a1,b1,n1,s1=0;
+        int a,b,n,t;
+java.util.Scanner inn=new java.util.Scanner(System.in);
+           t=inn.nextInt(); 
+        
+        for(;j<t;j++)
+            {
+      // System.out.println("");
+         a=inn.nextInt();
+         b=inn.nextInt();
+         n=inn.nextInt();
+      
+        s=s+a;
+        
+        for(i=0;i<n;i++)
+        {
+            s+=(Math.pow(2,i)*b);
+              if(i==n-1)
+           {System.out.print(s);}
+            else{         System.out.print(s+" ");
+             }
+        }
+            s=0;
+        System.out.println("");
+        }
+           
+           
+           
+    }
+}
