@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+         char s[1000];
+         int ar[1000];
+       gets(s);
+       int i=0,j,k=0,l,c=0,c1=0;
+
+       while(s[k]!='\0')
+              { char c=s[k];
+              for(l=k+1;s[l]!='\0';l++)
+                    {
+                   
+                     if((c==s[l]))  
+                       {
+                       s[k]='#';
+                         break;   
+                       }
+                     
+                    } 
+              k++;   
+              }
+       
+       
+       
+       while(s[i]!='\0')
+              {
+             if((s[i]>='a' &&s[i]<='z')||(s[i]>='A' &&s[i]<='Z'))
+                    {
+                    
+                   c++; 
+                   
+                    }
+              else
+                     {
+                     }
+             i++;
+              }
+       if(c==26)
+       {printf("pangram",c);
+       }
+       else 
+        {
+        printf("not pangram",c);
+       }      
+              return 0;
+}
