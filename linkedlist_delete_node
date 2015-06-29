@@ -1,0 +1,31 @@
+/*
+  Delete Node at a given position in a linked list 
+  Node is defined as 
+  struct Node
+  {
+     int data;
+     struct Node *next;
+  }
+*/
+Node* Delete(Node *head, int position)
+{
+ Node *t=head,*t1=head,*t2;
+    int c=0;
+    while(t!=NULL)
+        {   if(position==0)
+            {  t2=t;
+                  head=t->next;
+            t2->next=NULL;
+            }
+          if(c==position)
+            {
+             
+            t1->next=t->next;
+                      
+        }
+        c++;
+        t1=t;
+        t=t->next;
+        }
+    return head;
+}
