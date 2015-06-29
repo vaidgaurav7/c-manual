@@ -1,0 +1,32 @@
+/*
+  Print elements of a linked list on console 
+  head pointer input could be NULL as well for empty list
+  Node is defined as 
+  struct Node
+  {
+     int data;
+     struct Node *next;
+  }
+*/
+void Print(Node *head)
+{
+    Node *t=head;
+  if(t==NULL)
+      {
+     // printf("\n");      
+      }
+    else
+        {
+        while(t!=NULL)
+          {
+          printf("%d\n",t->data);  
+            t=t->next;
+          }
+          
+        
+        
+        
+       }
+    
+    
+}
