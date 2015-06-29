@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+     int t,i,j,k,l;
+       scanf("%d",&t);
+       for(i=0;i<t;i++)
+           {
+            char s[10000];  
+              scanf("%s",&s);
+              j=0;
+              while(s[j]!='\0')
+                     {
+                       j++;    
+                     }
+                           int r,m,n=j-1;
+                            m=j/2;
+                           int c=0; 
+            //  printf(" j=%d j/2=%d ",j,m);
+              
+              if(j%2!=0)
+                 {
+                     printf("%d\n",-1);
+                 }
+              else
+                 {
+                 for(k=0;k<m;k++)
+                        {
+                        for(l=m;l<j;l++)
+                               {
+                            if(s[k]==s[l])
+                                   {
+                              
+                                    c++;
+                                   break;
+                                   }
+                                                         
+                               }
+                                                
+                        }
+                                   
+                printf("%d\n",(m-c));
+                   }
+                            
+           }
+             
+       
+    return 0;
+}
